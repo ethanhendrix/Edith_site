@@ -1,618 +1,1109 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edith Venter Promotions - Premier Event Management</title>
 
-<head>
-  <!-- Primary Meta Tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edith Venter Promotions - Premier Event Management & Brand Communications</title>
-  <meta name="description" content="Discover Edith Venter Promotions: Over 21 years of expert event management, brand activations, and world-class experiences tailored to your brand's success.">
-  <meta name="keywords" content="Event Management, Brand Activation, Corporate Events, Luxury Events, Edith Venter Promotions, South Africa, Brand Communication">
+    <link
+      href="assets/assets/img/Favicon/EV_LOGO.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.edithventerpromo.com/">
-  <meta property="og:title" content="Edith Venter Promotions - Premier Event Management & Brand Communications">
-  <meta property="og:description" content="Bring your brand to life with Edith Venter Promotions. Luxury events, corporate communications, brand activations and unforgettable experiences.">
-  <meta property="og:image" content="https://www.edithventerpromo.comassets/assets/img/Favicon/EV_LOGO.ico">
-  <meta property="og:locale" content="en_ZA">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://www.edithventerpromo.com/">
-  <meta name="twitter:title" content="Edith Venter Promotions - Premier Event Management & Brand Communications">
-  <meta name="twitter:description" content="Expert event management and brand activation services with a legacy of excellence. Edith Venter Promotions, South Africa.">
-
-  <!-- Favicons -->
-  <link href="assets/assets/img/Favicon/EV_LOGO.ico" rel="icon" type="image/x-icon">
-  <link href="assets/assets/img/Favicon/EV_LOGO.ico" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,700|Poppins:300,400,500,600,700" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="assets/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-papErYFwNvTdo2h7QlXHkDv7QzvW3xRoxr0X6TY5tK7LFxB83V0MZQzN0Aqt5hX1UouZ3jSAhDMa4KwktZ/1Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-  <!-- Main CSS -->
-  <link href="assets/assets/css/style.css" rel="stylesheet">
-
-  <!-- Preload Critical CSS -->
-  <link rel="preload" href="assets/css/style.css" as="style">
-  </script>
-  <!-- ================== CUSTOM CSS ================== -->
-<style>
-  .text-gradient {
-    background: linear-gradient(45deg, #a24cc7, #e64e9f, #e25129, #ec740b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-  }
-  .navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  .navbar-nav .nav-link {
-    margin-left: 1rem;
-    transition: color 0.3s ease;
-  }
-  .navbar-nav .nav-link:hover {
-    opacity: 0.8;
-  }
-  .toggler-icon {
-    position: relative;
-    width: 40px;
-    height: 20px;
-    display: inline-block;
-    cursor: pointer;
-  }
-  .toggler-icon::before,
-  .toggler-icon::after,
-  .toggler-icon span {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: linear-gradient(45deg, #a24cc7, #e64e9f, #e25129, #ec740b);
-    transition: all 0.3s ease-in-out;
-  }
-  .toggler-icon::before {
-    top: 0;
-  }
-  .toggler-icon span {
-    top: 8px;
-  }
-  .toggler-icon::after {
-    bottom: 0;
-  }
-  .navbar-toggler.active .toggler-icon::before {
-    transform: rotate(45deg);
-    top: 8px;
-  }
-  .navbar-toggler.active .toggler-icon span {
-    opacity: 0;
-  }
-  .navbar-toggler.active .toggler-icon::after {
-    transform: rotate(-45deg);
-    bottom: 8px;
-  }
-</style>
-</head>
-
-
-
-
-
-<body>
-  <!--=============== HEADER ===============-->
-  <header class="header">
-    <!-- ================= CUSTOM RESPONSIVE NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm py-3" style="background-color: #FFECFD; ">
-  <div class="container" style="margin-inline:10px;">
-    <!-- Logo -->
-    <a class="navbar-brand" href="/index.html">
-      <img src="./assets/assets/img/Logo/ev_logo.png" alt="Edith Venter Logo" style="height: 100px; width: auto; margin-top: -10px; margin-bottom: -10px;">
-    </a>
-<!-- Mobile Toggle Button with Bootstrap Icons -->
-<button class="navbar-toggler border-0" type="button" id="custom-toggler" aria-label="Toggle navigation">
-  <i class="bi bi-list text-gradient" id="toggleIcon" style="font-size: 2rem;"></i>
-</button>
-
-
-    <!-- Nav Menu -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav align-items-center">
-        <li class="nav-item">
-          <a class="nav-link fw-bold text-gradient" href="/index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold text-gradient" href="#about">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold text-gradient" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-gradient" href="https://www.linkedin.com/company/edithventerpromo/" target="_blank">
-            <i class="fab fa-linkedin fa-lg"></i>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./assets/assets/img/Logo/EV_logo.svg"
+              alt="Edith Venter Promotions Logo"
+              style="height: 70px"
+            />
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-gradient" href="https://www.instagram.com/edith_venter_promotions/" target="_blank">
-            <i class="fab fa-instagram fa-lg"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-gradient" href="https://www.facebook.com/Edithventerpromotions" target="_blank">
-            <i class="fab fa-facebook fa-lg"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  </header>
-  
-  
-
-<!-- End Header -->
-<!-- Hero Carousel -->
-     <!-- Hero Carousel -->
-     <main>
-      <!-- Hero Section -->
- <!-- Hero Section -->
-<!-- Hero Section -->
-<section id="heroCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-top: 5%;">
-  <div class="carousel-inner">
-    <div class="HeroImages d-flex flex-column flex-xl-row align-items-center justify-content-between">
-      
-      <!-- Text on the left -->
-      <div class="carousel-caption text-start p-4 p-xl-5" style="flex: 1; width: 100%;">
-        <h1 class="mb-4" style="font-size: clamp(1.5rem, 3vw, 2.5rem);">
-          21 Years of Crafting World-Class Events that Engage, Activate, and Leave a Lasting Impression.
-        </h1>
-        <a href="#contact" class="gt-btn">Get Started Today</a>
-      </div>
-
-      <!-- Image on the right -->
-      <div class="flex-1 w-100">
-        <img src="assets/assets/img/Hero/New_Hero_img.jpg"
-             class="img-fluid w-100 hero-img"
-             alt="Hero Image">
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-    <section id="image-carousel" class="my-5" style="background-color: #ffecfd !important;">
-      <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-        <h2>Our Clients</h2>
-      </div>
-      <div style="background-color: #ffecfd !important;" id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
-        <div class="carousel-inner">
-    
-          <!-- First slide -->
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-between align-items-center mx-auto">
-              <img src="./assets/assets/img/Partners_Logos/D&G.png" alt="D&G" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/LV.png" alt="LV" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Unilever.png" alt="Unilever" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/ProductOfTheYear.png" alt="Product Of The Year" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Samsung.png" alt="Samsung" class="partner-logo">
-            </div>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <i class="bi bi-list text-gradient fs-1"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link px-3 active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#clients">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#contact">Contact Us</a>
+              </li>
+            </ul>
           </div>
-    
-          <!-- Second slide -->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-between align-items-center mx-auto">
-              <img src="./assets/assets/img/Partners_Logos/BMW.png" alt="BMW" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Mnet.png" alt="Mnet" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/E.png" alt="E" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/MSC.png" alt="MSC" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/TheHomeChannel.png" alt="The Home Channel" class="partner-logo">
-            </div>
-          </div>
-    
-          <!-- Third slide -->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-between align-items-center mx-auto">
-              <img src="./assets/assets/img/Partners_Logos/cell_C.png" alt="cell_C" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Discovery.png" alt="Discovery" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Dstv.png" alt="Dstv" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Nedbank.png" alt="Nedbank" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/motesepe_foundation.png" alt="Motsepe Foundation" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Roche.png" alt="Roche" class="partner-logo">
-            </div>
-          </div>
-    
-          <!-- Fourth slide -->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-between align-items-center mx-auto">
-              <img src="./assets/assets/img/Partners_Logos/Lombard_Odier.png" alt="Lombard Odier" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Effie_SA.png" alt="Effie SA" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Plascon.png" alt="Plascon" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/MSC.png" alt="MSC" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/pwc.png" alt="PWC" class="partner-logo">
-              <img src="./assets/assets/img/Partners_Logos/Quantanite.png" alt="Quantanite" class="partner-logo">
-            </div>
-          </div>
-    
         </div>
-      </div>
-    </section>
-    
+      </nav>
+    </header>
 
-<section id="about" class="about text-center"> 
-  <div class="container">
-    <!-- First Row: Text and Image Centered -->
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-6 order-md-2 content" data-aos="fade-up">
-        <h1>Your Premier Event Management & Brand Communication Partner</h1>
-        <p style="color: purple;">
-          For over 21 years, Edith Venter Promotions has been at the forefront of strategic brand communication, 
-          using world-class events to engage, communicate, and activate your brand with precision. 
-          Whether it's an intimate corporate gathering or a large-scale global event, 
-          we ensure a seamless experience that leaves a lasting impression.
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 hero-content" data-aos="fade-right">
+              <h1 class="display-3 fw-bold mb-4">
+                Crafting <span class="text-gradient">Luxury</span> Experiences
+              </h1>
+              <p class="lead mb-5">
+                21 Years of crafting world-class events that engage, activate,
+                and leave a lasting impression.
+              </p>
+              <a href="#contact" class="gt-btn">Get Started Today</a>
+            </div>
+            <div class="col-lg-6 text-center hero-visual" data-aos="zoom-in">
+              <div class="glass-panel p-2">
+                <img
+                  src="assets/assets/img/Hero/New_Hero_img.jpg"
+                  class="img-fluid rounded-4"
+                  alt="Hero"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" class="py-5">
+        <div class="container-fluid px-md-5">
+          <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2 class="h4 text-gradient">Our Prestigious Clients</h2>
+          </div>
+
+          <div class="row align-items-center justify-content-center g-3 g-md-4">
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/D&G.png"
+                  class="client-logo"
+                  alt="Dolce & Gabbana"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/LV.png"
+                  class="client-logo"
+                  alt="Louis Vuitton"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Samsung.png"
+                  class="client-logo"
+                  alt="Samsung"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/BMW.png"
+                  class="client-logo"
+                  alt="BMW"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Discovery.png"
+                  class="client-logo"
+                  alt="Discovery"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Nedbank.png"
+                  class="client-logo"
+                  alt="Nedbank"
+                />
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/cell_C.png"
+                  class="client-logo"
+                  alt="Cell C"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Dstv.png"
+                  class="client-logo"
+                  alt="DStv"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Effie_SA.png"
+                  class="client-logo"
+                  alt="Effie SA"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Lombard_Odier.png"
+                  class="client-logo"
+                  alt="Lombard Odier"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Mnet.png"
+                  class="client-logo"
+                  alt="M-Net"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/motesepe_foundation.png"
+                  class="client-logo"
+                  alt="Motsepe Foundation"
+                />
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/MSC.png"
+                  class="client-logo"
+                  alt="MSC"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/pwc.png"
+                  class="client-logo"
+                  alt="PwC"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Unilever.png"
+                  class="client-logo"
+                  alt="Unilever"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Roche.png"
+                  class="client-logo"
+                  alt="Roche"
+                />
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/TheHomeChannel.png"
+                  class="client-logo"
+                  alt="The Home Channel"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Quantanite.png"
+                  class="client-logo"
+                  alt="Quantanite"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/Plascon.png"
+                  class="client-logo"
+                  alt="Plascon"
+                />
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="client-glass-card">
+                <img
+                  src="./assets/assets/img/Partners_Logos/ProductOfTheYear.png"
+                  class="client-logo"
+                  alt="Product of the Year"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h2 class="display-5 fw-bold text-gradient mb-4">
+                Strategic Brand Communication
+              </h2>
+              <p class="lead">
+                For over 21 years, Edith Venter Promotions has used world-class
+                events to communicate and activate brands with precision.
+              </p>
+              <p>
+                From intimate corporate gatherings to global events, we manage
+                every aspect from registration to parting gifts, creating an
+                experience that aligns with your brand's vision.
+              </p>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="glass-panel p-3">
+                <div
+                  class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/v1LcxpYcDUg?rel=0"
+                    title="Edith Venter Promotions"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 fw-bold text-gradient">
+              Our Specialized Services
+            </h2>
+            <p class="text-white opacity-75">
+              World-class brand communications and event precision for over 21
+              years.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-award mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">Event Management</h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalEventMan"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-champagne-glasses mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">Event Bar & Catering</h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCatering"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-masks-theater mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">Décor Elements</h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDecor"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-microphone-lines mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">
+                  Entertainment & Talent
+                </h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTalent"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-gears mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">Technical Production</h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTech"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-bullhorn mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">PR & Marketing</h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPR"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-passport mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">Incentive Travel</h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTravel"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-map-location-dot mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">Corporate Retreats</h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRetreats"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-ticket mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">
+                  Promotions & Activations
+                </h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPromo"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 offset-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="icon-box p-4 text-center h-100">
+                <i class="fa-solid fa-hammer mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">
+                  Exhibition Stand Builder
+                </h3>
+                <button
+                  class="btn view-details-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalExhibition"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="glass-panel rounded-5 p-5" data-aos="fade-up">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold text-gradient">Work With Us</h2>
+              <p class="text-dim">
+                Elevate your next event with Edith Venter Promotions.
+              </p>
+            </div>
+
+            <form class="row g-4">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control glass-input"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control glass-input"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label
+                  class="form-label small text-uppercase letter-spacing-1"
+                  style="color: var(--text-dim)"
+                  >Service of Interest</label
+                >
+                <select
+                  class="form-select glass-input"
+                  name="service_interest"
+                  required
+                >
+                  <option value="" selected disabled>
+                    Select the service you require...
+                  </option>
+
+                  <option value="event-management">Event Management</option>
+                  <option value="bar-catering">Event Bar & Catering</option>
+                  <option value="decor-elements">Décor Elements</option>
+
+                  <option value="technical-production">
+                    Technical Production
+                  </option>
+                  <option value="pr-marketing">PR & Marketing</option>
+                  <option value="entertainment-talent">
+                    Entertainment & Talent
+                  </option>
+
+                  <option value="promotions-activations">
+                    Promotions & Activations
+                  </option>
+                  <option value="exhibition-stand">
+                    Exhibition Stand Builder
+                  </option>
+
+                  <option value="corporate-retreats">Corporate Retreats</option>
+                  <option value="incentive-travel">Incentive Travel</option>
+
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control glass-input"
+                  rows="4"
+                  placeholder="Tell us about your project"
+                ></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="gt-btn">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container text-center">
+        <img
+          src="./assets/assets/img/Logo/EV_logo.svg"
+          style="height: 100px"
+          class="mb-4"
+        />
+        <div class="social-links d-flex justify-content-center gap-4 mb-4">
+          <a
+            href="https://www.linkedin.com/company/edithventerpromo/"
+            class="text-white fs-3"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/edith_venter_promotions/"
+            class="text-white fs-3"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/Edithventerpromotions"
+            class="text-white fs-3"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <p class="small mb-0">
+          © 2026 Edith Venter Promotions. All rights reserved.
         </p>
       </div>
-      <div class="col-md-6 order-md-1 image-container d-flex justify-content-center" data-aos="fade-left">
-        <img src="assets/assets/img/Services/Edith_headshot.jpg" alt="Placeholder for CEO Image" 
-             class="img-fluid" style="height: 500px;">
-      </div>
-    </div>
+    </footer>
 
-    <!-- Video Section Centered -->
-    <div class="video-container mt-5 d-flex justify-content-center">
-      <iframe 
-        src="https://www.youtube.com/embed/v1LcxpYcDUg?start=1&autoplay=1&mute=1" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media; accelerometer; clipboard-write; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div> <!-- End Container -->
-</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+    <script src="./assets/assets/js/main.js"></script>
+    <script src="./assets/assets/js/script.js"></script>
+    <script>
+      // Select all links in the navbar
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-<!-- End About Section -->
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          // Remove 'active' class from all links
+          navLinks.forEach((item) => item.classList.remove("active"));
+          // Add 'active' class to the one that was clicked
+          this.classList.add("active");
+        });
+      });
+    </script>
 
-<!-- Counter Section
-<section class="counter-section" style="background-color: #ffecfd !important;">
-  <div class="counter" id="counter" >
-    <div class="row align-items-center">
-
-
-      <div class="col-md-6 text-center text-md-start mb-4 mb-md-0 counter-content">
-        <h2>Your Success Fuels Our Mission</h2>
-      
-        <div id="count" class="display-3 fw-bold">0+</div>
-      </div>
-
-
-      <div class="col-md-6 text-center counter-image">
- 
-        <img src="./assets/assets/img/Services/customers.png" alt="Counter Image" class="img-fluid">
-      </div>
-
-    </div>
-  </div>
-</section>
- -- Replace the src with your own image -->
-
-    <!-- ======= Services Section ======= -->
-<section id="services" class="services" aria-label="Network Media Services">
-  <div class="grid">
-    <div class="section-title" data-aos="fade-in">
-      <h2>Our Services</h2>
-      <p>Discover digital marketing solutions designed to meet your unique needs.</p>
-    </div>
-
-    <div class="row g-2 justify-content-center px-2">
-      
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#webDev" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-calendar-check"></i>
-          <h3>Event Management</h3>
-          <p>From registration to parting gifts, we manage every aspect of your event with precision, creating an experience that aligns with your brand’s vision. Our proprietary event management system ensures smooth execution for maximum impact.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#smManagement" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-utensils"></i>
-          <h3>Event Bar & Catering</h3>
-          <p>Beyond just food, we create a culinary experience that complements your brand. Our gourmet menus are designed to elevate your event, ensuring that each meal is both delicious and aligned with your brand message.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#paidMedia" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-palette"></i>
-          <h3>Décor Elements</h3>
-          <p>We specialize in immersive event décor that stimulates the senses and enhances brand perception. Our pre-event setup ensures that you experience the event aesthetics before execution.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#phoVideo" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-microphone-lines"></i>
-          <h3>Entertainment & Talent Booking</h3>
-          <p>From celebrity hosts to international artists, our entertainment division sources top-tier talent tailored to your event. Whether it’s live music, MCs, or immersive performances, we ensure the energy aligns with your brand.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#gDesign" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-bolt"></i>
-          <h3>State-of-the-Art Technical Production</h3>
-          <p>We provide cutting-edge lighting, staging, and sound solutions to create a seamless and visually stunning event. From small venues to stadiums, our tech team ensures flawless execution.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#pr" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-bullhorn"></i>
-          <h3>Public Relations & Marketing</h3>
-          <p>With our expert brand ambassadors and promotional staff, we design and execute activations that captivate audiences, ensuring meaningful engagement with your brand.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#travel" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-plane-up"></i>
-          <h3>Incentive Travel & Corporate Retreats</h3>
-          <p>We plan exclusive incentive travel experiences, including corporate retreats, executive meetings, and VIP travel packages—locally and internationally.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#printing" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-print"></i>
-          <h3>Incentive Travel</h3>
-          <p>High-quality printing services for your business, including flyers, posters, and business cards.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#promo" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-users-viewfinder"></i>
-          <h3>Promotions & Activations</h3>
-          <p>High-quality printing services for your business, including flyers, posters, and business cards.</p>
-        </a>
-      </div>
-
-      <div class="col-sm-6 col-md-4 col-5th d-flex align-items-stretch">
-        <a href="/services.html#exhibition" class="icon-box mini-card d-flex flex-column h-100 w-100" data-aos="fade-up">
-          <i class="fa-solid fa-hammer"></i>
-          <h3>Exhibition Stand Builder</h3>
-          <p>We bring your exhibition vision to life from start to finish! Our expert team handles everything—from innovative Concept Design to Project Management.</p>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="section-title" data-aos="fade-in" data-aos-delay="100">
-  <h2>Keep up to date with our socials.</h2>
-  <iframe src="https://widget.taggbox.com/2153379" style="width:100%;height:350px;border:none;"></iframe>
- 
-    
-    <!-- End Services Section -->
-
-</div>
-    <!-- ======= Cta Section ======= --
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Discover Our Services</h3>
-          <h5><strong>Explore Tailored Digital Marketing Solutions for Your Business!</strong></h5>
-          <a class="cta-btn" href="#contact">Find your fit today</a>
-        </div>
-
-      </div>
-    </section>
-     End Cta Section -->
-
-
- <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact section-bg" aria-label="Contact Network Media">
-  <div class="container" data-aos="fade-up">
-
-    <!-- Section Title -->
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p style="color: purple;">
-        Reach out to Network Media for all your connectivity needs. Whether you’re looking for assistance, have a query, or simply want to connect, we’re here to help.
-      </p>
-    </div>
-
-    <!-- Contact Information -->
-    <div class="row">
-      <!-- Address -->
-      <div class="col-lg-4 col-md-6 col-sm-6 align-items-stretch mb-5 mb-lg-2">
-        <div class="info-box mb-4">
-          <i class="bx bx-map"></i>
-          <h3>Our Address</h3>
-          <p>Unit 5 Sandhurst Estate, 101 Empire place, Hurlingham 2196</p>
-        </div>
-      </div>
-
-      <!-- Email -->
-      <div class="col-lg-4 col-md-6 col-sm-6 align-items-stretch mb-5 mb-lg-2">
-        <div class="info-box mb-4">
-          <i class="bx bx-envelope"></i>
-          <h3>Email Us</h3>
-          <p><a href="mailto:ethan@networkmedia.co.za" class="text-decoration-none">edith@edithventerpromo.com</a></p><br>
-        </div>
-      </div>
-
-
-      <!-- Phone -->
-      <div class="col-lg-4 col-md-6 col-sm-6 align-items-stretch mb-5 mb-lg-2">
-        <div class="info-box mb-4">
-          <i class="bx bx-phone-call"></i>
-          <h3>Call Us</h3>
-          <p><a href="tel:+27103925200" class="text-decoration-none">+27 63 749 2372</a></p><br>
-        </div>
-      </div>
-    </div>
-
-    <!-- Map and Contact Form -->
-    <div class="row mt-4">
-      <!-- Google Map -->
-      <div class="col-lg-6">
-        <iframe 
-          class="w-100 rounded" 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.7818891138822!2d28.03598597541179!3d-26.106037627137177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950cd7d2c737fd%3A0x2dbf57511a5cc11a!2sEdith%20Venter%20Promotions!5e0!3m2!1sen!2sza!4v1741934147144!5m2!1sen!2sza"
-          frameborder="0" 
-          style="height: 400px;" 
-          allowfullscreen 
-          title="Network Media Office Location">
-        </iframe>
-      </div>
-
-<div class="col-lg-6">
-  <form 
-  action="https://api.web3forms.com/submit" 
-  method="POST" 
-  class="php-email-form"
->
-
-  <!-- Required Access Key -->
-  <input type="hidden" name="access_key" value="034c8391-bb39-455e-b346-cf8b94f5d699">
-
-  <!-- Honeypot Spam Protection -->
-  <input type="checkbox" name="botcheck" class="d-none">
-
-  <!-- Optional: Redirect after submission -->
-  <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-
-  <div class="row">
-    <div class="col-md-6 form-group mb-3">
-      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-    </div>
-    <div class="col-md-6 form-group mb-3">
-      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-    </div>
-  </div>
-
-  <div class="form-group mb-3">
-    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
-  </div>
-
-  <div class="form-group d-flex justify-content-center">
-    <button type="submit" class="btn btn-primary px-4 py-2">Submit Form</button>
-  </div>
-</form>
-</div>
-
-
-
-<footer id="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-info">
-            <div class="nav__logo">
-              <img src="./assets/assets/img/Logo/ev_logo.png" alt="Edith Venter Promotions Logo" style="width: 160px; height: auto;">
-            </div>
-            <p class="pb-3"><em>Contact us now or find us on socials!</em></p>
-            <p>
-              <strong>Address:</strong> Unit 5 Sandhurst Estate, 101 Empire Place, Hurlingham, Sandton, 2196<br>
-              <strong>Phone:</strong> +27 63 749 2372<br>
-              <strong>Email:</strong> <a style="color: purple;" href="mailto:edith@edithventerpromo.com" class="text-decoration-none">edith@edithventerpromo.com</a><br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="https://www.facebook.com/Edithventerpromotions" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/edith_venter_promotions/" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/edithventerpromo/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <div class="modal fade" id="modalTech" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">Technical Production</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/Technical Production.png"
+                    alt="Technical Production"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  From intimate stages to stadium-scale visuals, we provide
+                  state-of-the-art lighting, sound, and staging solutions. Our
+                  tech team works with flawless precision to create a visually
+                  stunning environment.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Ignite the Stage</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4 style="text-align: left;">Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="/index.html">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/team.html">About Us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/services.html">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="/privacypolicy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-
       </div>
     </div>
-  </div>
 
-  <div class="container text-center py-3">
-    © 2025 Edith Venter Promotions. All rights reserved.
-  </div>
-</footer>
+    <div class="modal fade" id="modalEventMan" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">Event Management</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/EventManagement.png"
+                    alt="Event Management"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Precision is our signature. From the first guest registration
+                  to the final parting gift, we curate every touchpoint to
+                  mirror your brand's unique vision.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Bring Your Vision to Life</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div class="modal fade" id="modalCatering" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">Event Bar & Catering</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/EventBarCatering.png"
+                    alt="Catering"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  We believe catering is a form of brand communication. Beyond
+                  exceptional flavors, our gourmet menus are designed as sensory
+                  extensions of your brand message.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Curate Your Menu</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/assets/vendor/aos/aos.js"></script>
-  <script src="assets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://kit.fontawesome.com/269e829866.js" crossorigin="anonymous"></script>
-  <script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
-<script>
-  const toggler = document.getElementById('custom-toggler');
-  const icon = document.getElementById('toggleIcon');
-  const nav = document.getElementById('navbarNav');
+    <div class="modal fade" id="modalDecor" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">Décor Elements</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/DecorElements.png"
+                    alt="Décor Elements"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Stimulate the senses and reshape brand perception through
+                  immersive aesthetics. We ensure every floral arrangement and
+                  lighting cue perfectly aligns with your mood.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Design Your Space</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  toggler.addEventListener('click', () => {
-    nav.classList.toggle('show'); // if not using Bootstrap's auto toggle
+    <div class="modal fade" id="modalTalent" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">Entertainment & Talent</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/EntertainmentTalent.png"
+                    alt="Talent"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Connect with your audience through world-class talent. Our
+                  entertainment division sources elite hosts, celebrities, and
+                  international performers specifically tailored to you.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Book Top Tier Talent</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    if (icon.classList.contains('bi-list')) {
-      icon.classList.replace('bi-list', 'bi-x');
-    } else {
-      icon.classList.replace('bi-x', 'bi-list');
-    }
-  });
+    <div class="modal fade" id="modalPR" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">PR & Marketing</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/PrMarketing.png"
+                    alt="PR Marketing"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Amplify your presence through expert brand representation. Our
+                  ambassadors are trained communicators who execute activations
+                  that drive meaningful engagement.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Engage Your Audience</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  // Optional: close nav on link click (for mobile)
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      if (nav.classList.contains('show')) {
-        nav.classList.remove('show');
-        icon.classList.replace('bi-x', 'bi-list');
-      }
-    });
-  });
-</script>
+    <div class="modal fade" id="modalTravel" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">Incentive Travel</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/IncentiveTravel.png"
+                    alt="Incentive Travel"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Reward excellence with exclusive VIP experiences. From luxury
+                  global getaways to local high-end meetings, we plan every
+                  detail to ensure comfort and prestige.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Plan Your Escape</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="modalRetreats" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">Corporate Retreats</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/CorporateRetreats.png"
+                    alt="Corporate Retreats"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Reinvigorate your executive teams with curated retreats that
+                  combine strategy and luxury. We handle the fine details while
+                  you focus on the future.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Organize a Retreat</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="modalPromo" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">
+              Promotions & Activations
+            </h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/PromotionsActivations.png"
+                    alt="Promotions"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Turn eyes into interest with high-quality activations. We
+                  provide everything from premium printed materials to
+                  on-the-ground ambassadors who breathe life into your brand.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Activate Your Brand</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-  <!-- Template Main JS File -->
-  <script src="./assets/assets/js/main.js"></script>\
-  <script src="./assets/assets/js/carousel.js"></script>
-  <script src="./assets/assets/js/counter.js"></script>
-  <script src="/app.js"></script>
-    <!-- Your code -->
- 
-
-</body>
-
+    <div
+      class="modal fade"
+      id="modalExhibition"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal">
+          <div class="modal-header border-0">
+            <h2 class="modal-title h4 text-gradient">
+              Exhibition Stand Builder
+            </h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <div class="ratio-9-16-container glass-panel overflow-hidden">
+                  <img
+                    src="assets/assets/img/Services/ExhibitionStandBuilder.png"
+                    alt="Exhibition Builder"
+                    class="img-9-16"
+                  />
+                </div>
+              </div>
+              <div class="col-md-7 d-flex flex-column">
+                <p class="text-white opacity-75">
+                  Stand out on the floor with innovative concept design and
+                  high-quality manufacturing. We deliver a stress-free,
+                  unforgettable exhibition presence.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="#contact"
+                    class="gt-btn w-100 text-center py-3"
+                    data-bs-dismiss="modal"
+                    >Build Your Presence</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

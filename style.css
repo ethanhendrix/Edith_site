@@ -95,7 +95,28 @@ body {
   padding: 15px 0; /* Slightly more padding for a luxury feel */
   height: auto;
 }
+/* Ensure all links are white by default */
+.header .navbar-nav .nav-link {
+    color: #ffffff !important; /* Forces the color to white */
+    font-weight: 400;
+    opacity: 0.8; /* Keeps it subtle when not active */
+    transition: all 0.3s ease;
+}
 
+/* The Active State: Bold + Gradient */
+.header .navbar-nav .nav-link.active {
+    font-weight: 700 !important;
+    opacity: 1 !important;
+    
+    /* This creates the text gradient effect */
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Fallback for browsers that don't support text-clip */
+    color: #f5576c; 
+}
 /*--------------------------------------------------------------
 # Hero Section Spacing (Fixed Overlap)
 --------------------------------------------------------------*/
@@ -271,6 +292,55 @@ section {
   }
 }
 /*--------------------------------------------------------------
+# 6. CONTACT
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# 6. CONTACT FORM REFINEMENT
+--------------------------------------------------------------*/
+
+/* 1. Main Input & Select Styling */
+.glass-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: #ffffff !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    border-radius: 12px !important;
+    transition: all 0.3s ease;
+    appearance: none; /* Removes OS default styling to allow custom purple background */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* 2. Placeholder Styling */
+.glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* 3. Focus State */
+.glass-input:focus {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #e64e9f !important; /* Matches your logo pink */
+    box-shadow: 0 0 15px rgba(230, 78, 159, 0.3);
+    outline: none;
+}
+
+/* 4. The Dropdown List (The part that opens) */
+.glass-input option {
+    background-color: #0f0213 !important; /* Forces your Stage Dark midnight purple */
+    color: #ffffff !important;
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* 5. Custom White Dropdown Arrow for Bootstrap form-select */
+.form-select.glass-input {
+    background-position: right 1rem center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+}
+/*--------------------------------------------------------------
 # 7. FOOTER
 --------------------------------------------------------------*/
 #footer {
@@ -292,7 +362,9 @@ section {
   font-size: 20px;
   color: #fff;
   transition: 0.3s;
+  text-decoration: none !important;
 }
+
 
 .social-links a:hover {
   background: var(--primary-gradient);
