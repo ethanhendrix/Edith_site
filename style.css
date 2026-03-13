@@ -508,3 +508,16 @@ section {
   object-fit: cover; /* This prevents stretching by cropping to fit */
   object-position: center;
 }
+/* Custom styling for the Success Modal */
+.glass-modal {
+  background: rgba(255, 236, 253, 0.2) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(162, 76, 199, 0.3) !important;
+  border-radius: 30px !important;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #a24cc7, #e64e9f, #e25129, #ec740b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

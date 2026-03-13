@@ -1,0 +1,13 @@
+# robots.txt — Edith Venter Promotions
+# https://www.edithventerpromotions.co.za
+
+# Allow all search engines to crawl the full site
+User-agent: *
+Allow: /
+
+# Block access to asset folders (no SEO value)
+Disallow: /assets/
+Disallow: /assets/assets/js/
+
+# Sitemap location
+Sitemap: https://www.edithventerpromotions.co.za/sitemap.xml
