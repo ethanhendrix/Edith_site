@@ -38,7 +38,7 @@
             <img
               src="./assets/assets/img/Logo/EV_logo.svg"
               alt="Edith Venter Promotions Logo"
-              style="height: 70px"
+              style="height: 0px"
             />
           </a>
           <button
@@ -655,6 +655,47 @@
         });
       });
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    // Initializing with your Public Key
+    emailjs.init("zotUh0vDhpooTKoBU");
+  })();
+
+  window.onload = function() {
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      submitBtn.disabled = true;
+
+      // Using Service ID: service_y4xoapf 
+      // and Template ID: template_s1rt6yp
+      emailjs.sendForm('service_y4xoapf', 'template_s1rt6yp', this)
+        .then(() => {
+          submitBtn.innerHTML = 'Message Sent!';
+          submitBtn.style.background = '#28a745'; 
+          contactForm.reset();
+          
+          setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.style.background = 'var(--primary-gradient)';
+            submitBtn.disabled = false;
+          }, 4000);
+        }, (error) => {
+          submitBtn.innerHTML = 'Error. Try Again';
+          submitBtn.style.background = '#dc3545';
+          console.error('EmailJS Error:', error);
+          submitBtn.disabled = false;
+        });
+    });
+  }
+</script>
 
     <div class="modal fade" id="modalTech" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
