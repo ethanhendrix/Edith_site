@@ -521,3 +521,58 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* Video Overlay Container */
+.video-overlay-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 720px; /* Matching your iframe max-width */
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+}
+
+/* The Thumbnail Image */
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.video-overlay-wrapper:hover .video-thumbnail {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* The Play Button Overlay */
+.play-button-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Designing the Play Icon to match your theme */
+.play-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #a24cc7, #e64e9f, #e25129, #ec740b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.video-overlay-wrapper:hover .play-icon {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(230, 78, 159, 0.6);
+}
