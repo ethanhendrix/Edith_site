@@ -66,7 +66,7 @@
           "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event Management", "description": "Full-service event management from registration to parting gifts, curated to mirror your brand's unique vision." } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event Bar & Catering", "description": "Gourmet menus crafted as sensory extensions of your brand message." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Décor Elements", "description": "Immersive aesthetics and sensory design perfectly aligned with your event's mood." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Decor Elements", "description": "Immersive aesthetics and sensory design perfectly aligned with your event's mood." } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Entertainment & Talent", "description": "Elite hosts, celebrities, and international performers tailored to your audience." } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technical Production", "description": "State-of-the-art lighting, sound, and staging for events of any scale." } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PR & Marketing", "description": "Expert brand representation and trained communicators to amplify your presence." } },
@@ -83,7 +83,7 @@
           {
             "@type": "Question",
             "name": "What event management services does Edith Venter Promotions offer?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Edith Venter Promotions offers a full suite of event services including event management, event bar and catering, décor elements, entertainment and talent booking, technical production, PR and marketing, incentive travel, corporate retreats, promotions and activations, and exhibition stand building." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Edith Venter Promotions offers a full suite of event services including event management, event bar and catering, decor elements, entertainment and talent booking, technical production, PR and marketing, incentive travel, corporate retreats, promotions and activations, and exhibition stand building." }
           },
           {
             "@type": "Question",
@@ -162,12 +162,16 @@
     @media print {
       .download-bar { display: none; }
       section { break-inside: avoid; }
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
     }
 
     /* ── HERO ── */
     .hero {
       position: relative;
-      background: #1a0a2e;
+      background: #3b2060;
       min-height: 400px;
       display: flex;
       align-items: center;
@@ -182,14 +186,6 @@
       background:
         linear-gradient(135deg, rgba(162,76,199,0.35) 0%, transparent 55%),
         linear-gradient(315deg, rgba(236,116,11,0.22) 0%, transparent 55%);
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(to bottom right, transparent 49.4%, rgba(200,169,81,0.22) 49.4%, rgba(200,169,81,0.22) 50.6%, transparent 50.6%),
-        linear-gradient(to bottom left,  transparent 49.4%, rgba(200,169,81,0.14) 49.4%, rgba(200,169,81,0.14) 50.6%, transparent 50.6%);
     }
     .hero-content {
       position: relative;
@@ -468,24 +464,36 @@
       background: #fff;
       border: 1px solid rgba(162,76,199,0.13);
       border-radius: 10px;
-      padding: 12px 14px;
-      text-align: center;
-      font-size: 11.5px;
-      font-weight: 600;
-      color: var(--purple);
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: border-color .2s, box-shadow .2s;
+      min-height: 70px;
+    }
+    .client-chip img {
+      max-width: 100%;
+      max-height: 44px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      filter: grayscale(20%);
+      transition: filter .2s;
     }
     .client-chip:hover {
       border-color: rgba(162,76,199,0.35);
       box-shadow: 0 4px 16px rgba(162,76,199,0.1);
     }
+    .client-chip:hover img {
+      filter: grayscale(0%);
+    }
 
     /* ── CONTACT ── */
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      max-width: 820px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      max-width: 1000px;
       margin: 0 auto;
     }
     .contact-card {
@@ -530,7 +538,7 @@
       margin-bottom: 8px;
     }
     .contact-card .value {
-      font-size: 13px;
+      font-size: 11.5px;
       color: var(--purple);
       font-weight: 600;
       word-break: break-word;
@@ -631,7 +639,7 @@
   <div class="hero">
     <div class="hero-content">
       <img class="hero-logo"
-           src="https://edithventerpromo.com/assets/assets/img/Logo/EV_logo.svg"
+           src="assets/assets/img/Logo/EV_Logo_w.svg"
            alt="Edith Venter Promotions Logo"/>
       <div class="hero-rule"></div>
       <p class="hero-eyebrow">Engage &bull; Communicate &bull; Activate</p>
@@ -814,27 +822,27 @@
       <h2 class="section-title center">Some of our <strong>Valued Clients</strong></h2>
     </div>
     <div class="clients-grid">
-      <div class="client-chip">Nedbank</div>
-      <div class="client-chip">BMW</div>
-      <div class="client-chip">Roche</div>
-      <div class="client-chip">Louis Vuitton</div>
-      <div class="client-chip">Lombard Odier</div>
-      <div class="client-chip">DStv</div>
-      <div class="client-chip">E! Entertainment</div>
-      <div class="client-chip">Plascon</div>
-      <div class="client-chip">Unilever</div>
-      <div class="client-chip">Effie South Africa</div>
-      <div class="client-chip">MSC Cruises</div>
-      <div class="client-chip">Dolce &amp; Gabbana</div>
-      <div class="client-chip">Quantanite</div>
-      <div class="client-chip">PwC</div>
-      <div class="client-chip">OBS</div>
-      <div class="client-chip">Discovery</div>
-      <div class="client-chip">Samsung</div>
-      <div class="client-chip">MultiChoice</div>
-      <div class="client-chip">Motsepe Foundation</div>
-      <div class="client-chip">Cell C</div>
-      <div class="client-chip">The Home Channel</div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/D&G.webp" alt="Dolce &amp; Gabbana" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/LV.webp" alt="Louis Vuitton" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Samsung.webp" alt="Samsung" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/BMW.webp" alt="BMW" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Discovery.webp" alt="Discovery" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Nedbank.webp" alt="Nedbank" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/cell_C.webp" alt="Cell C" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Dstv.webp" alt="DStv" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/E.webp" alt="E! Entertainment" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Effie_SA.webp" alt="Effie South Africa" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Lombard_Odier.webp" alt="Lombard Odier" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Mnet.webp" alt="M-Net" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/motsepe_foundation.webp" alt="Motsepe Foundation" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/MSC.webp" alt="MSC Cruises" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/pwc.webp" alt="PwC" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Unilever.webp" alt="Unilever" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Roche.webp" alt="Roche" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/TheHomeChannel.webp" alt="The Home Channel" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Quantanite.webp" alt="Quantanite" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/Plascon.webp" alt="Plascon" loading="lazy"/></div>
+      <div class="client-chip"><img src="./assets/assets/img/Partners_Logos/ProductOfTheYear.webp" alt="Product of the Year" loading="lazy"/></div>
     </div>
   </section>
 
@@ -913,6 +921,25 @@
         <p class="social-handle">edithventerpromo</p>
       </a>
 
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+  <section style="background:#fff;">
+    <div style="max-width:820px; margin:0 auto; text-align:center;">
+      <p class="section-label center">Watch Us In Action</p>
+      <h2 class="section-title center">Our <strong>Videos</strong></h2>
+      <p style="color:var(--muted); font-size:13px; margin-bottom:28px;">Click the links below for an overview of Edith Venter Promotions and one of our beautiful events</p>
+      <div style="display:flex; justify-content:center; gap:24px; flex-wrap:wrap;">
+        <a href="https://www.youtube.com/watch?v=v1LcxpYcDUg" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:10px; background:var(--grad); color:#fff; font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:12px 28px; border-radius:40px; text-decoration:none; transition:opacity .2s, transform .2s;" onmouseover="this.style.opacity='.85';this.style.transform='translateY(-1px)'" onmouseout="this.style.opacity='1';this.style.transform='translateY(0)'">
+          <svg viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          Company Overview
+        </a>
+        <a href="https://www.youtube.com/watch?v=VwGsM4FfdKQ" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:10px; background:var(--grad); color:#fff; font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:12px 28px; border-radius:40px; text-decoration:none; transition:opacity .2s, transform .2s;" onmouseover="this.style.opacity='.85';this.style.transform='translateY(-1px)'" onmouseout="this.style.opacity='1';this.style.transform='translateY(0)'">
+          <svg viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          Event Showcase
+        </a>
+      </div>
     </div>
   </section>
 
