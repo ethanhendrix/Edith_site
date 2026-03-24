@@ -145,24 +145,32 @@
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Entertainment & Talent",
-                    "description": "Elite hosts, celebrities, and international performers tailored to your audience."
+                    "name": "Content & Design",
+                    "description": "A dedicated team of Creative Directors, Graphic Designers, Art Directors and Copywriters delivering content execution strategies that drive greater message comprehension."
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Technical Production",
-                    "description": "State-of-the-art lighting, sound, and staging for events of any scale."
+                    "name": "Entertainment",
+                    "description": "Access to South Africa's biggest artists and international performers, covering MCs, music, and full entertainment creation services."
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "PR & Marketing",
-                    "description": "Expert brand representation and trained communicators to amplify your presence."
+                    "name": "Technical Gear",
+                    "description": "The latest technical equipment for events of any scale — from small gatherings to stadium events — including ground-breaking staging and screens."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Public Relations & Marketing",
+                    "description": "Close media relationships enabling rapid PR and marketing turnaround, with messages delivered to media within a day of briefing for maximum exposure."
                   }
                 },
                 {
@@ -170,15 +178,7 @@
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Incentive Travel",
-                    "description": "Exclusive VIP global getaways and local luxury experiences to reward excellence."
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Corporate Retreats",
-                    "description": "Curated retreats combining strategy and luxury to reinvigorate executive teams."
+                    "description": "Full management of corporate incentive packages including travel, accommodation, conferencing, executive meetings, gifting and complete itineraries — nationally and internationally."
                   }
                 },
                 {
@@ -186,7 +186,7 @@
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Promotions & Activations",
-                    "description": "High-quality brand activations and ambassadors that bring your brand to life."
+                    "description": "Experienced brand ambassadors and promotional staff who conceptualise and execute activations based on brand strategy, supplying all elements for the activation."
                   }
                 },
                 {
@@ -208,7 +208,7 @@
                 "name": "What event management services does Edith Venter Promotions offer?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Edith Venter Promotions offers a full suite of event services including event management, event bar and catering, décor elements, entertainment and talent booking, technical production, PR and marketing, incentive travel, corporate retreats, promotions and activations, and exhibition stand building."
+                  "text": "Edith Venter Promotions offers a full suite of event services including event management, event bar and catering, décor elements, content and design, entertainment, technical gear, public relations and marketing, incentive travel, promotions and activations, and exhibition stand building."
                 }
               },
               {
@@ -665,7 +665,7 @@
               <div class="icon-box p-4 text-center h-100">
                 <i class="fa-solid fa-microphone-lines mb-3 text-gradient"></i>
                 <h3 class="fw-bold h5 text-white mb-4">
-                  Entertainment & Talent
+                  Entertainment
                 </h3>
                 <button
                   class="btn view-details-btn"
@@ -684,7 +684,7 @@
             >
               <div class="icon-box p-4 text-center h-100">
                 <i class="fa-solid fa-gears mb-3 text-gradient"></i>
-                <h3 class="fw-bold h5 text-white mb-4">Technical Production</h3>
+                <h3 class="fw-bold h5 text-white mb-4">Technical Gear</h3>
                 <button
                   class="btn view-details-btn"
                   data-bs-toggle="modal"
@@ -702,7 +702,7 @@
             >
               <div class="icon-box p-4 text-center h-100">
                 <i class="fa-solid fa-bullhorn mb-3 text-gradient"></i>
-                <h3 class="fw-bold h5 text-white mb-4">PR & Marketing</h3>
+                <h3 class="fw-bold h5 text-white mb-4">Public Relations & Marketing</h3>
                 <button
                   class="btn view-details-btn"
                   data-bs-toggle="modal"
@@ -733,12 +733,12 @@
               data-aos-delay="100"
             >
               <div class="icon-box p-4 text-center h-100">
-                <i class="fa-solid fa-map-location-dot mb-3 text-gradient"></i>
-                <h3 class="fw-bold h5 text-white mb-4">Corporate Retreats</h3>
+                <i class="fa-solid fa-pen-nib mb-3 text-gradient"></i>
+                <h3 class="fw-bold h5 text-white mb-4">Content & Design</h3>
                 <button
                   class="btn view-details-btn"
                   data-bs-toggle="modal"
-                  data-bs-target="#modalRetreats"
+                  data-bs-target="#modalContent"
                 >
                   View Details
                 </button>
@@ -1132,280 +1132,241 @@
       </div>
     </footer>
 
+    <!-- EVENT MANAGEMENT MODAL -->
     <div class="modal fade" id="modalEventMan" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">Event Management</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/EventManagement.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Event Management by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              Precision is our signature. From registration to parting gifts, we
-              curate every touchpoint to mirror your brand's unique vision.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/EventManagement.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Event Management by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Event Management</h2>
+                <p class="mb-3">With over 21 years of flawless execution, we deliver full end-to-end Event Management that transforms your brand vision into an unforgettable live experience. From the moment your first guest registers to the final parting gift, every touchpoint is intentionally crafted to reflect your brand identity.</p>
+                <p class="mb-4">Our proprietary event management system gives us the precision to manage every element — logistics, timelines, suppliers, and on-the-day flow — so nothing is left to chance. The result? Memorable events that don't just impress, they deliver measurable value to your brand.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- EVENT BAR & CATERING MODAL -->
     <div class="modal fade" id="modalCatering" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">Event Bar & Catering</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/EventBarCatering.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Event Bar and Catering by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              We believe catering is a form of brand communication. Our gourmet
-              menus are sensory extensions of your brand message.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/EventBarCatering.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Event Bar and Catering by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Event Bar & Catering</h2>
+                <p class="mb-3">At Edith Venter Promotions, food and beverage are never an afterthought — they are a powerful extension of your brand story. Our in-house culinary team designs a bespoke food strategy that marries gourmet excellence with on-brand sensory storytelling.</p>
+                <p class="mb-4">Every menu, every presentation, every flavour is curated to connect your guests with your brand message in the most memorable way possible. Whether it's an intimate executive dinner or a large-scale product launch, we can create any food and bar experience you can imagine — and then some.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- DÉCOR ELEMENTS MODAL -->
     <div class="modal fade" id="modalDecor" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">Décor Elements</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/DecorElements.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Décor Elements by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              Stimulate the senses through immersive aesthetics that perfectly
-              align with your event's mood.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/DecorElements.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Décor Elements by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Décor Elements</h2>
+                <p class="mb-3">Great décor doesn't just beautify a space — it immerses your guests in your brand world from the moment they walk in. We specialise in using décor to stimulate all the senses and leave a lasting emotional impression that lingers long after the event ends.</p>
+                <p class="mb-4">Our unique pre-event décor setup allows you to experience the full look and feel before a single guest arrives, so you can approve with complete confidence. Backed by an extensive décor repository built over two decades, we craft environments that authentically reflect your brand equity — every single time.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- ENTERTAINMENT MODAL -->
     <div class="modal fade" id="modalTalent" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">Entertainment & Talent</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/EntertainmentTalent.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Entertainment and Talent booking by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              Connect through elite hosts, celebrities, and international
-              performers tailored to your audience.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/EntertainmentTalent.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Entertainment by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Entertainment</h2>
+                <p class="mb-3">The right entertainment transforms a good event into an extraordinary one. Our entertainment division has direct access to some of the biggest and most sought-after artists in South Africa — and when your vision demands more, we source top international performers from anywhere in the world.</p>
+                <p class="mb-4">From world-class MCs who command a room, to live music, full production shows, and bespoke entertainment concepts created from scratch — we handle every aspect of entertainment so your guests are captivated from the first moment to the last.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- TECHNICAL GEAR MODAL -->
     <div class="modal fade" id="modalTech" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">Technical Production</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/TechnicalProduction.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Technical Production services by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              State-of-the-art lighting, sound, and staging solutions for events
-              of any scale.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/TechnicalProduction.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Technical Gear by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Technical Gear</h2>
+                <p class="mb-3">Flawless technical execution is the backbone of every world-class event. Our technical division maintains a comprehensive registry of the latest, most advanced equipment — ensuring seamless delivery whether you're hosting an intimate boardroom session or a full-scale stadium event.</p>
+                <p class="mb-4">From ground-breaking LED staging and high-resolution screens to precision sound and lighting, we bring the technical firepower that makes your brand look and sound extraordinary. We stay ahead of the curve so your event always delivers a cutting-edge experience.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- PUBLIC RELATIONS & MARKETING MODAL -->
     <div class="modal fade" id="modalPR" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">PR & Marketing</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/PrMarketing.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="PR and Marketing services by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              Amplify your presence through expert brand representation and
-              trained communicators.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/PrMarketing.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="PR and Marketing by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Public Relations & Marketing</h2>
+                <p class="mb-3">Your event deserves to be seen and talked about. We leverage deep, longstanding relationships with South Africa's leading media publications to ensure your brand receives the visibility it commands. From product launches to major activations, we craft PR initiatives that generate real, meaningful awareness.</p>
+                <p class="mb-4">Our experienced PR and marketing team moves with exceptional speed — able to take a fully developed message to media within a single day of briefing. When timing matters, we deliver maximum exposure without compromising on quality or accuracy.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- INCENTIVE TRAVEL MODAL -->
     <div class="modal fade" id="modalTravel" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">Incentive Travel</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/IncentiveTravel.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Incentive Travel experiences by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              Reward excellence with exclusive VIP global getaways and local
-              luxury experiences.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/IncentiveTravel.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Incentive Travel by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Incentive Travel</h2>
+                <p class="mb-3">Reward your top performers and executives with experiences that inspire loyalty, celebrate achievement, and reinforce your company culture. We organise and manage bespoke incentive travel packages for corporates — handling every detail so you can focus entirely on your people.</p>
+                <p class="mb-4">Our comprehensive service covers all travel and accommodation bookings, conferencing, executive meetings, gifting, and fully curated itineraries — both locally across South Africa and internationally. Every journey we plan is designed to leave a lasting impression and motivate sustained excellence.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="modalRetreats" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+    <!-- CONTENT & DESIGN MODAL -->
+    <div class="modal fade" id="modalContent" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">Corporate Retreats</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/CorporateRetreats.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Corporate Retreats by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              Reinvigorate executive teams with curated retreats combining
-              strategy and luxury.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/ContentDesign.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Content and Design by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Content & Design</h2>
+                <p class="mb-3">Your message is only as powerful as the way it is presented. Our in-house creative team — comprising Creative Directors, Graphic Designers, Art Directors and Copywriters — develops a comprehensive content execution strategy that ensures your key messages land with clarity, impact and memorability.</p>
+                <p class="mb-4">We go beyond aesthetics: we incorporate the latest technology into your event environment so that your brand look, feel and narrative stays top-of-mind for every attendee. From stage visuals and digital displays to printed collateral and branded content, every element is aligned to your brand story.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- PROMOTIONS & ACTIVATIONS MODAL -->
     <div class="modal fade" id="modalPromo" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">
-              Promotions & Activations
-            </h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/Services/PromotionsActivations.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Promotions and Brand Activations by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              High-quality activations and ambassadors that breathe life into
-              your brand.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/PromotionsActivations.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Promotions and Brand Activations by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Promotions & Activations</h2>
+                <p class="mb-3">A great brand activation does more than generate attention — it creates genuine connection. Backed by a large, experienced and rigorously trained team of promotional staff and brand ambassadors, we design and execute activations that excite, inform and convert, covering everything from registration and guest welcomes to full brand activation crews.</p>
+                <p class="mb-4">We don't just supply staff — we conceptualise the entire activation based on your brand strategy and supply all the elements needed for seamless execution. All you need to focus on is the results.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div
-      class="modal fade"
-      id="modalExhibition"
-      tabindex="-1"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+    <!-- EXHIBITION STAND BUILDER MODAL -->
+    <div class="modal fade" id="modalExhibition" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content glass-modal">
-          <div class="modal-header border-0">
-            <h2 class="modal-title h4 text-gradient">
-              Exhibition Stand Builder
-            </h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-            ></button>
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
           </div>
-          <div class="modal-body text-white">
-            <img
-              src="./assets/assets/img/ExhibitionStandBuilder.webp"
-              class="img-fluid rounded-3 mb-3 w-100"
-              alt="Exhibition Stand Building by Edith Venter Promotions"
-              loading="lazy"
-            />
-            <p>
-              Innovative concept design and high-quality manufacturing for
-              unforgettable presence.
-            </p>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="./assets/assets/img/Services/ExhibitionStandBuilder.webp" class="img-fluid h-100 w-100 rounded-start-3" style="object-fit:cover;min-height:300px;" alt="Exhibition Stand Building by Edith Venter Promotions" loading="lazy"/>
+              </div>
+              <div class="col-md-7 p-4 p-md-5 text-white d-flex flex-column justify-content-center">
+                <h2 class="h4 text-gradient mb-3">Exhibition Stand Builder</h2>
+                <p class="mb-3">Your exhibition stand is often the first physical encounter a prospect has with your brand — make it impossible to walk past. We combine innovative concept design with high-quality craftsmanship to build exhibition stands that command attention, communicate your brand story and outshine the competition on any show floor.</p>
+                <p class="mb-4">From initial concept through to on-site construction and breakdown, our team manages the entire process. Whether you need a bold modular stand or a fully custom-built structure, we deliver a presence that is as striking as it is strategically effective.</p>
+                <button class="gt-btn" onclick="goToContact(this)">Get In Touch</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1447,6 +1408,22 @@
           this.classList.add("active");
         });
       });
+    </script>
+
+    <!-- Fix: dismiss modal first, then scroll to #contact -->
+    <script>
+      function goToContact(btn) {
+        const modal = btn.closest('.modal');
+        const bsModal = bootstrap.Modal.getInstance(modal);
+        if (bsModal) {
+          modal.addEventListener('hidden.bs.modal', function scrollOnClose() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          }, { once: true });
+          bsModal.hide();
+        } else {
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     </script>
   </body>
 </html>
