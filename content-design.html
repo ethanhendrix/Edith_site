@@ -6,7 +6,6 @@
 
     <title>Content & Design | Edith Venter Promotions</title>
     <meta name="description" content="Propelling your brand values into the spotlight. Strategic content execution, creative direction, and high-impact graphic design." />
-    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.edithventerpromotions.co.za/content-design.html" />
 
     <meta property="og:type" content="website" />
@@ -30,127 +29,363 @@
       .service-hero { position: relative; min-height: 70vh; display: flex; align-items: flex-end; overflow: hidden; }
       .service-hero__bg { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1920'); background-size: cover; background-position: center; transform: scale(1.05); transition: transform 8s ease; }
       .service-hero__bg.loaded { transform: scale(1); }
-      .service-hero__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 2, 19, 0.9) 0%, rgba(15, 2, 19, 0.4) 50%, rgba(15, 2, 19, 0.2) 100%); }
+      .service-hero__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 2, 19, 0.95) 0%, rgba(15, 2, 19, 0.5) 50%, rgba(15, 2, 19, 0.2) 100%); }
       .service-hero__content { position: relative; z-index: 2; padding: 4rem 0 3.5rem; }
-      .service-hero__title { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 700; color: #fff; line-height: 1.1; margin-bottom: 1.25rem; }
-      .service-hero__eyebrow { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 1rem; }
-      .service-hero__tagline { font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 300; color: rgba(255,255,255,0.8); max-width: 560px; line-height: 1.6; }
-      
+      .service-hero__title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 700; color: #fff; line-height: 1.1; margin-bottom: 1.25rem; }
       .breadcrumb-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 100px; padding: 0.4rem 1rem; font-size: 0.8rem; color: #fff; text-decoration: none; transition: background 0.2s, color 0.2s; margin-bottom: 2rem; }
       .breadcrumb-pill:hover { background: rgba(255,255,255,0.13); color: #fff; transform: translateX(-3px); }
       
-      .service-description { padding: 8rem 0; }
-      .service-description .lead { font-size: 1.25rem; font-weight: 400; line-height: 1.8; color: rgba(255,255,255,0.85); }
+      .service-description { padding: 10rem 0; }
+      .service-eyebrow { display: block; font-size: 0.9rem; letter-spacing: 1px; color: rgba(255,255,255,0.7); margin-bottom: 10px; }
+      .service-description .lead { font-size: 1.3rem; font-weight: 400; line-height: 1.8; color: rgba(255,255,255,0.8); margin-bottom: 2rem; }
+      .service-description p { font-size: 1.05rem; line-height: 1.9; color: rgba(255,255,255,0.6); }
       
-      .key-point { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 2.5rem 2rem; height: 100%; transition: all 0.3s ease; }
-      .key-point:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.18); transform: translateY(-5px); }
-      .key-point__icon { width: 52px; height: 52px; border-radius: 12px; background: var(--primary-gradient); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.3rem; color: #fff; }
-      .key-point__title { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; color: #fff; margin-bottom: 0.6rem; }
-      .key-point__body { font-size: 0.9rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0; }
+      .key-point-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 2.5rem; height: 100%; transition: all 0.3s ease; }
+      .key-point-card:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-5px); }
+      .icon-box-small { width: 60px; height: 60px; border-radius: 15px; background: var(--primary-gradient); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.5rem; color: #fff; }
+      .point-title { font-weight: 700; color: #fff; font-size: 1.2rem; margin-bottom: 1rem; }
+      .point-body { font-size: 0.95rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin: 0; }
       
-      .moodboard-section { padding: 8rem 0; }
       .mood-collage { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 250px); gap: 20px; }
-      .mood-collage__img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; transition: transform 0.5s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-      .mood-collage__item:hover .mood-collage__img { transform: scale(1.03); }
+      .mood-collage__img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; transition: transform 0.5s ease; }
       .mood-collage__item--lg { grid-column: span 2; grid-row: span 2; }
     </style>
   </head>
 
   <body>
 
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="./assets/assets/img/Logo/EV_logo.svg" alt="Logo" />
-          </a>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <i class="bi bi-list text-gradient fs-1"></i>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link px-3" href="index.html#about">About</a></li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link px-3 dropdown-toggle active" href="#" id="serviceDrop" role="button" data-bs-toggle="dropdown">Services</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="event-management.html">Event Management</a></li>
-                  <li><a class="dropdown-item" href="bar-catering.html">Event Bar & Catering</a></li>
-                  <li><a class="dropdown-item" href="decor-elements.html">Décor Elements</a></li>
-                  <li><a class="dropdown-item active" href="content-design.html">Content & Design</a></li>
-                  <li><a class="dropdown-item" href="entertainment-talent.html">Entertainment & Talent</a></li>
-                  <li><a class="dropdown-item" href="technical-production.html">Technical Production</a></li>
-                  <li><a class="dropdown-item" href="pr-marketing.html">PR & Marketing</a></li>
-                  <li><a class="dropdown-item" href="incentive-travel.html">Incentive Travel</a></li>
-                  <li><a class="dropdown-item" href="promotions-activations.html">Promotions & Activations</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="exhibition-stands.html">Exhibition Stand Builder</a></li>
-                </ul>
-              </li>
-              
-              <li class="nav-item"><a class="nav-link px-3" href="index.html#clients">Clients</a></li>
-              <li class="nav-item"><a class="nav-link px-3" href="index.html#contact">Contact Us</a></li>
+<header class="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/assets/img/Logo/EV_logo.svg" alt="Logo" />
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-list text-gradient fs-1"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="index.html#about">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-3 dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="event-management.html">Event Management</a></li>
+              <li><a class="dropdown-item" href="bar-catering.html">Event Bar & Catering</a></li>
+              <li><a class="dropdown-item" href="decor-elements.html">Décor Elements</a></li>
+              <li><a class="dropdown-item active" href="content-design.html">Content & Design</a></li>
+              <li><a class="dropdown-item" href="entertainment-talent.html">Entertainment & Talent</a></li>
+              <li><a class="dropdown-item" href="technical-production.html">Technical Production</a></li>
+              <li><a class="dropdown-item" href="pr-marketing.html">PR & Marketing</a></li>
+              <li><a class="dropdown-item" href="incentive-travel.html">Incentive Travel</a></li>
+              <li><a class="dropdown-item" href="promotions-activations.html">Promotions & Activations</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="exhibition-stands.html">Exhibition Stand Builder</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+          </li>
+          <li class="nav-item"><a class="nav-link px-3" href="index.html#clients">Clients</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="index.html#contact">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="/businessProfile.html">Business Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
     <main>
       <section class="service-hero">
         <div class="service-hero__bg" id="heroBg"></div>
         <div class="service-hero__overlay"></div>
         <div class="container service-hero__content">
-          <a href="index.html#services" class="breadcrumb-pill fade-up-1"><i class="bi bi-arrow-left"></i> All Services</a>
-          <p class="service-hero__eyebrow fade-up-1">Visual Storytelling</p>
-          <h1 class="service-hero__title fade-up-2">Content & Design</h1>
-          <p class="service-hero__tagline fade-up-3">Propelling your brand values into the spotlight through expert creative direction.</p>
+          <a href="index.html#services" class="breadcrumb-pill"><i class="bi bi-arrow-left"></i> All Services</a>
+          <p class="service-hero__eyebrow">Visual Excellence</p>
+          <h1 class="service-hero__title">Content & Design</h1>
         </div>
       </section>
 
       <section class="service-description">
         <div class="container">
-          <div class="row g-5 align-items-center">
+          <div class="row g-5">
             <div class="col-lg-7" data-aos="fade-up">
-              <span class="section-eyebrow">Creative Direction</span>
-              <h2 class="display-6 fw-bold text-white mb-4">Message Comprehension</h2>
-              <p class="lead mb-4">Our creative and art directors ensure your brand message is not just seen, but deeply felt and understood by your target audience.</p>
-              <p>We integrate cutting-edge event technology with pixel-perfect graphic design and copywriting to ensure your identity remains top-of-mind long after the activation ends.</p>
+              <span class="service-eyebrow">Creative Direction</span>
+              <h2 class="display-3 fw-bold text-white mb-4">Shine the Spotlight</h2>
+              <p class="lead">Propelling your brand values into the spotlight through strategic content execution and expert art direction. Our directors ensure your message achieves maximum comprehension with your audience.</p>
+              <p>We combine pixel-perfect graphic design with cutting-edge technology to ensure your brand identity remains top-of-mind long after your event or activation has concluded.</p>
             </div>
+            
             <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
               <div class="row g-4">
-                <div class="col-12"><div class="key-point"><div class="key-point__icon"><i class="fa-solid fa-pen-nib"></i></div><p class="key-point__title">Art Direction</p><p class="key-point__body">Creative strategies that allow your unique brand values to shine.</p></div></div>
-                <div class="col-12"><div class="key-point"><div class="key-point__icon"><i class="fa-solid fa-laptop-code"></i></div><p class="key-point__title">Tech Integration</p><p class="key-point__body">Utilizing the latest technology for maximum audience engagement.</p></div></div>
+                <div class="col-12">
+                  <div class="key-point-card">
+                    <div class="icon-box-small"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3 class="point-title">Art Direction</h3>
+                    <p class="point-body">Creative strategies that allow your unique brand values to shine through every visual touchpoint.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="key-point-card">
+                    <div class="icon-box-small"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3 class="point-title">Tech Integration</h3>
+                    <p class="point-body">Utilizing the latest technology to ensure seamless message comprehension and engagement.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="moodboard-section">
+      <section class="moodboard-section pt-0">
         <div class="container">
-          <div class="text-center mb-5" data-aos="fade-up">
-            <span class="section-eyebrow">Creative Portfolio</span>
-            <h2 class="display-6 fw-bold text-white">Visual Impact</h2>
-          </div>
-          
-          <div class="mood-collage" data-aos="fade-up" data-aos-delay="150">
+          <div class="mood-collage" data-aos="fade-up">
             <div class="mood-collage__item mood-collage__item--lg">
-              <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200" alt="Creative Strategy" class="mood-collage__img" />
+              <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200" alt="Design Strategy" class="mood-collage__img" />
             </div>
-            <div class="mood-collage__item">
-              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600" alt="Design Agency" class="mood-collage__img" />
+            <div class="mood-collage__item"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600" class="mood-collage__img" /></div>
+            <div class="mood-collage__item"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600" class="mood-collage__img" /></div>
+            <div class="mood-collage__item"><img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=600" class="mood-collage__img" /></div>
+            <div class="mood-collage__item"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600" class="mood-collage__img" /></div>
+          </div>
+        </div>
+      </section>
+           <section id="contact" class="py-5">
+        <div class="container">
+          <!-- AEO: FAQ Section for featured snippets and AI answer engines -->
+          <div class="glass-panel rounded-5 p-5 mb-5" data-aos="fade-up">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold text-gradient">
+                Frequently Asked Questions
+              </h2>
+              <p class="text-dim">
+                Everything you need to know about working with us.
+              </p>
             </div>
-            <div class="mood-collage__item">
-              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600" alt="Content Creation" class="mood-collage__img" />
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item bg-transparent border-0 mb-3">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white fw-semibold"
+                    style="
+                      background: rgba(255, 255, 255, 0.05);
+                      border-radius: 12px;
+                    "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    What event management services does Edith Venter Promotions
+                    offer?
+                  </button>
+                </h3>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-white opacity-75">
+                    We offer a comprehensive suite of services including event
+                    management, event bar &amp; catering, décor elements,
+                    entertainment &amp; talent booking, technical production, PR
+                    &amp; marketing, incentive travel, corporate retreats,
+                    promotions &amp; activations, and exhibition stand building
+                    — all delivered to the highest luxury standard.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-transparent border-0 mb-3">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white fw-semibold"
+                    style="
+                      background: rgba(255, 255, 255, 0.05);
+                      border-radius: 12px;
+                    "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    How many years of experience does Edith Venter Promotions
+                    have?
+                  </button>
+                </h3>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-white opacity-75">
+                    Edith Venter Promotions has over 21 years of experience
+                    delivering world-class events and brand activations across
+                    South Africa and internationally, building a trusted
+                    reputation with top global and local brands.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-transparent border-0 mb-3">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white fw-semibold"
+                    style="
+                      background: rgba(255, 255, 255, 0.05);
+                      border-radius: 12px;
+                    "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    Which brands has Edith Venter Promotions worked with?
+                  </button>
+                </h3>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-white opacity-75">
+                    Our prestigious client portfolio includes Louis Vuitton,
+                    Dolce &amp; Gabbana, BMW, Samsung, PwC, Nedbank, Discovery,
+                    DStv, Unilever, Roche, MSC, Motsepe Foundation, and many
+                    more leading organisations across luxury, financial,
+                    technology, and media sectors.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-transparent border-0 mb-3">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white fw-semibold"
+                    style="
+                      background: rgba(255, 255, 255, 0.05);
+                      border-radius: 12px;
+                    "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    Does Edith Venter Promotions handle international events?
+                  </button>
+                </h3>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-white opacity-75">
+                    Yes. We manage both South African events and international
+                    productions, including incentive travel programmes and
+                    global brand activations for multinational clients.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item bg-transparent border-0">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white fw-semibold"
+                    style="
+                      background: rgba(255, 255, 255, 0.05);
+                      border-radius: 12px;
+                    "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    How do I get started with Edith Venter Promotions?
+                  </button>
+                </h3>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-white opacity-75">
+                    Simply fill in our contact form below with your name, email,
+                    service of interest, and a brief description of your
+                    project. Our team will be in touch promptly to discuss how
+                    we can bring your vision to life.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mood-collage__item">
-              <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=600" alt="Brand Identity" class="mood-collage__img" />
+          </div>
+          <!-- End FAQ Section -->
+
+          <div class="glass-panel rounded-5 p-5" data-aos="fade-up">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold text-gradient">Work With Us</h2>
+              <p class="text-dim">
+                Elevate your next event with Edith Venter Promotions.
+              </p>
             </div>
-            <div class="mood-collage__item">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600" alt="Strategic Planning" class="mood-collage__img" />
-            </div>
+
+            <form id="contact-form" class="row g-4">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="from_name"
+                  class="form-control glass-input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  name="user_email"
+                  class="form-control glass-input"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label
+                  class="form-label small text-uppercase letter-spacing-1"
+                  style="color: var(--text-dim)"
+                  >Service of Interest</label
+                >
+                <select
+                  class="form-select glass-input"
+                  name="service_interest"
+                  required
+                >
+                  <option value="" selected disabled>
+                    Select the service you require...
+                  </option>
+                  <option value="event-management">Event Management</option>
+                  <option value="bar-catering">Event Bar & Catering</option>
+                  <option value="decor-elements">Décor Elements</option>
+                  <option value="technical-production">
+                    Technical Production
+                  </option>
+                  <option value="pr-marketing">PR & Marketing</option>
+                  <option value="entertainment-talent">
+                    Entertainment & Talent
+                  </option>
+                  <option value="promotions-activations">
+                    Promotions & Activations
+                  </option>
+                  <option value="exhibition-stand">
+                    Exhibition Stand Builder
+                  </option>
+                  <option value="corporate-retreats">Corporate Retreats</option>
+                  <option value="incentive-travel">Incentive Travel</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea
+                  name="message"
+                  class="form-control glass-input"
+                  rows="4"
+                  placeholder="Tell us about your project"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" id="submit-btn" class="gt-btn">
+                  Send Message
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -173,13 +408,12 @@
         <p class="small mb-0">© 2026 Edith Venter Promotions. All rights reserved.</p>
       </div>
     </footer>
-
+    <script src="./assets/assets/js/mail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ duration: 1000, once: true });
-      const heroBg = document.getElementById('heroBg');
-      if (heroBg) window.addEventListener('load', () => heroBg.classList.add('loaded'));
+      window.addEventListener('load', () => document.getElementById('heroBg')?.classList.add('loaded'));
     </script>
   </body>
 </html>
