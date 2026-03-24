@@ -611,3 +611,80 @@ section {
     aspect-ratio: 4 / 3;
   }
 }
+/* Add this to the end of your playStyle.css */
+
+/*--------------------------------------------------------------
+# 3.1 NAVIGATION DROPDOWN (LUXURY GLASS)
+--------------------------------------------------------------*/
+
+/* Customizing the dropdown menu container */
+.dropdown-menu {
+  background: rgba(15, 2, 19, 0.95) !important; /* Deep Midnight Purple */
+  backdrop-filter: blur(15px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 15px !important;
+  padding: 12px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  margin-top: 10px !important;
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 20px !important;
+  transition: all 0.3s ease;
+  border-radius: 8px !important;
+}
+
+/* Hover State for Dropdown Links */
+.dropdown-item:hover {
+  background: var(--primary-gradient) !important;
+  color: #ffffff !important;
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+/* Divider inside dropdown */
+.dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+}
+
+/* Dropdown arrow rotation on click/open */
+.nav-item.dropdown .dropdown-toggle::after {
+  transition: transform 0.3s ease;
+}
+.nav-item.dropdown.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/*--------------------------------------------------------------
+# 8. SOCIAL MEDIA ICON REFINEMENT
+--------------------------------------------------------------*/
+
+/* Specific logic for the Instagram SVG to ensure it's not a block */
+.social-links a i.fa-instagram,
+.social-links a svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Ensure the container maintains a perfect circle */
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Hover Lift for social links */
+.social-links a:hover {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(162, 76, 199, 0.3);
+}
